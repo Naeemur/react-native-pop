@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const Elevations = require('../lib/elevations');
-const { Comp, Compact, TouchableNativeFeedback } = require('../components/Comp')
+const Elevations = require('react-native-elevation');
+const { Comp, Compact, TouchableNativeFeedback } = require('react-native-comp-util')
 
 const {
 	Component
@@ -22,7 +22,7 @@ const {
 	// ViewPropTypes,
 	I18nManager,
 } = require('react-native');
-const { StyleSheet, Scaling } = require('../lib/scaling')
+const { StyleSheet, Scaling } = require('react-native-scaling')
 
 const STATES = {
 	HIDDEN: 'HIDDEN',
