@@ -23,7 +23,7 @@ let {
 const Elevations = require('react-native-elevation')
 const { StyleSheet, Scaling } = require('react-native-scaling')
 const { Comp, Compact, TouchableNativeFeedback } = require('react-native-comp-util')
-const { MenuWrapper, MenuItem, MenuDivider, Menu } = require('../components/Menu')
+const { MenuWrapper, MenuItem, MenuDivider, Menu } = require('./Menu')
 const StandardCurve = Easing.bezier(0.4, 0.0, 0.2, 1);
 const TranslateCurve = Easing.bezier(0, 0.5, 0.5, 1);
 const AcceleratedCurve = Easing.bezier(0.4, 0.0, 1, 1);
