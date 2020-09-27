@@ -294,7 +294,7 @@ const App = () => (
 
 `fade: true` when true, uses opacity animation
 
-`theme: null` a theme object that is managed outside of popup with following structure (you might want to use react-native-theme-system for this) -
+`theme: null` a theme object that is managed outside of popup with following structure (you might want to use [react-native-theme-system](https://github.com/Naeemur/react-native-theme-system) for this) -
 
 ```ts
 {
@@ -375,7 +375,7 @@ const App = () => (
 
 `config(opts)` sets configurations for all popup instances. `opts` is an object with one or more of the following keys with values.
 - `theme` an object of theme for the all popup and children, this is overriden by `theme` prop set on a specific `<Popup/>`
-- `scale` a number that used for scaling the popup components using react-native-scaling
+- `scale` a number that used for scaling the popup components using [react-native-scaling](https://github.com/Naeemur/react-native-scaling)
 - `button` an object for creating buttons used within the components. This has structure of `{ component, deriveProps, deriveTouchableStyles }` used like this-
 
 	```xml
@@ -406,7 +406,8 @@ const App = () => (
 	```js
 	{
 		component: Ripple,
-		deriveProps: () => ({ highlight:true, containerStyle: {overflow:'hidden'} })
+		deriveProps: () => ({ highlight:true, containerStyle: {overflow:'hidden'} }),
+		deriveTouchableStyles: () => ({})
 	}
 	```
 
