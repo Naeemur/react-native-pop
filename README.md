@@ -4,13 +4,15 @@
 
 ## Features
 - Pure JS, lightweight, works on Android, iOS and Web
-- Implements material design arc motion and elevation thanks to react-native-elevation
-- Full theming option supporting react-native paper and react-native theme-system
-- Ability to scale to different screen density and size thanks to react-native-scaling
+- Implements material design arc motion and elevation thanks to [react-native-elevation](https://github.com/Naeemur/react-native-elevation)
+- Full theming option supporting react-native paper and [react-native-theme-system](https://github.com/Naeemur/react-native-theme-system)
+- Ability to scale to different screen density and size thanks to [react-native-scaling](https://github.com/Naeemur/react-native-scaling)
 - Lots of customization including creation of custom dialogs
 - Both component based and method based usage available
 
 ![Demo Image](https://naeemur.github.io/asset-bucket/rn-pop.gif)
+
+(This demo uses scale of 1.15 on this iPhone 11. Also uses my [react-native-advanced-ripple](https://github.com/Naeemur/react-native-advanced-ripple) and [react-native-theme-system](https://github.com/Naeemur/react-native-theme-system) modules. Details are below.)
 
 ## Installation
 
@@ -380,6 +382,15 @@ const App = () => (
 	</component>
 	```
 	example: `{ component:TouchableOpacity, deriveProps:()=>({}), deriveTouchableStyles:()=>({}) }`
+	
+	example using [react-native-advanced-ripple](https://github.com/Naeemur/react-native-advanced-ripple):
+	```js
+	{
+		component: Ripple,
+		deriveProps: () => ({ highlight:true, containerStyle: { borderRadius:4, marginLeft:8, overflow:'hidden' }}),
+		deriveTouchableStyles: () => ({marginLeft:0})
+	}
+	```
 - `press` an object for creating press items like in lists used within the components. This has structure of `{ component, deriveProps, deriveTouchableStyles }` used like this-
 
 	```xml
@@ -388,6 +399,14 @@ const App = () => (
 	</component>
 	```
 	example: `{ component:TouchableOpacity, deriveProps:()=>({}), deriveTouchableStyles:()=>({}) }`
+	
+	example using [react-native-advanced-ripple](https://github.com/Naeemur/react-native-advanced-ripple):
+	```js
+	{
+		component: Ripple,
+		deriveProps: () => ({ highlight:true, containerStyle: {overflow:'hidden'} })
+	}
+	```
 
 
 ## Instance methods
