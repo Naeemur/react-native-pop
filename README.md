@@ -61,6 +61,8 @@ export default App
 
 ## API
 
+Child popup components are stateless and uses react context to interact with parent `<Popup/>` component. All of the child popup components must be child of `<Popup/>` component to work.
+
 ## ***Component: Popup.Menu***
 
 A popup that alerts user with a message. Its props and default values are -
